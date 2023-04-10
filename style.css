@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(225, 100%, 94%);
+}
+
+.main-container {
+  background: url("pattern-background-desktop.svg") no-repeat;
+
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+
+  /* height: 79vh;   dont use vw,vh if you don't want the content to get squeezed as you reduce the screen width
+  width: 23vw; */
+
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.box1 .hero {
+  /* height: 25vh;
+  width: 23vw; */
+  width: 350px;
+  height: 180px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* font-family: 'Red Hat Display', sans-serif; */
+
+.box2 .head {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 23px;
+}
+
+.box2 .description {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  font-size: 13px;
+  margin-top: 13px;
+}
+.box3 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: 65px auto auto;
+  grid-gap: 20px;
+}
+
+.item1 {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: row;
+  /* width: 20vw; */
+  width: 290px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 70px auto auto;
+}
+.item1 .music1 {
+  height: 6vh;
+  padding: 8px;
+  margin-left: 2px;
+  margin-top: 5px;
+}
+
+.plan {
+  font-size: smaller;
+  font-weight: bold;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.year {
+  margin-top: 3px;
+  color: hsl(224, 23%, 55%);
+}
+
+.change {
+  font-size: 13px;
+  margin-top: 28px;
+  margin-left: 38px;
+  font-weight: 600;
+}
+
+.change a {
+  color: hsl(243, 69%, 46%);
+}
+
+.item2 {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  padding: 7px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.item3 {
+  color: hsl(224, 23%, 55%);
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  padding: 2px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.change a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s;
+}
+
+.item2:hover {
+  cursor: pointer;
+  background-color: hsla(245, 75%, 52%, 0.683);
+  transition: all 0.4s;
+}
+
+.item3:hover {
+  cursor: pointer;
+  color: black;
+  transition: all 0.4s;
+}
+
+.coder {
+  line-height: 0.8cm;
+  font-size: 13px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.coder a:hover {
+  color: black;
+  cursor: pointer;
+}
